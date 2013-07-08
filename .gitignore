@@ -1,8 +1,10 @@
-.DS_Store
-.bundle
-/tmp
-tmp/**/*
 *.gem
-.rvmrc
+.bundle
+.DS_Store
 .rbenv-version
-pkg/
+.rvmrc
+.ruby-gemset
+.ruby-version
+pkg
+tmp
+tmp/**/*
