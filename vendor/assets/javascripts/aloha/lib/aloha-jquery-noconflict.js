@@ -9,4 +9,6 @@
 // to suit his needs.
 Aloha = window.Aloha || {};
 Aloha.settings = Aloha.settings || {};
-Aloha.settings.jQuery = Aloha.settings.jQuery || jQuery.noConflict(true);
+Aloha.settings = { sidebar: { disabled: true } };
+// Restore the global $ and jQuery variables of your project's jQuery
+Aloha.settings.jQuery = window.jQuery.noConflict(true);
