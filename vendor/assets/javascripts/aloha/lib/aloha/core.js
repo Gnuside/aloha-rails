@@ -44,6 +44,8 @@ define([
 		var browser = $.browser;
 		var version = browser.version;
 		return !(
+			// Chrome/Safari 4
+			(browser.webkit && !browser.chrome && parseFloat(version) < 532.5) ||
 			// FF 3.5
 			(browser.mozilla && parseFloat(version) < 1.9) ||
 			// IE 7
